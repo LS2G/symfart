@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.2",
+        "sensiolabs/security-checker": "^5.0",
         "symfony/apache-pack": "^1.0",
         "symfony/asset": "4.2.*",
         "symfony/console": "4.2.*",
@@ -28,7 +29,6 @@
         "symfony/yaml": "4.2.*"
     },
     "require-dev": {
-        "sensiolabs/security-checker": "^5.0",
         "symfony/debug-pack": "*",
         "symfony/maker-bundle": "^1.11",
         "symfony/profiler-pack": "*",
@@ -63,7 +63,7 @@
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd",
-            "security-checker security:check": "script"
+             "security-checker security:check": "script"
         },
         "post-install-cmd": [
             "@auto-scripts"
